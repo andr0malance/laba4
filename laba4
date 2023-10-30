@@ -1,0 +1,29 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace laba4
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            void summa()
+            {
+                int sum = 0;
+                for (int i = 10; i < 100; i++)
+                {
+                    if (i % 6 != 0 && i % 4 == 0)
+                    {
+                        sum = sum + i;
+                    }
+                }
+                Console.WriteLine(sum);
+                Console.ReadLine();
+            }
+            summa();
+        }
+    }
+}
